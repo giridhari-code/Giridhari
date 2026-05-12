@@ -5,45 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giridhari | Private Research Lab</title>
     <style>
-        /* Minimalist Stroustrup Aesthetics */
-        body { font-family: "Times New Roman", serif; background: #fff; color: #000; max-width: 900px; margin: 0 auto; padding: 0 20px; line-height: 1.5; }
+        /* Minimalist Mastermind Aesthetic */
+        body { font-family: "Times New Roman", serif; background: #ffffff; color: #000000; max-width: 850px; margin: 0 auto; padding: 0 20px; line-height: 1.4; }
         
-        /* Navbar Styling */
-        nav { border-bottom: 2px solid #000; padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { font-weight: bold; font-size: 1.5rem; text-decoration: none; color: #000; }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: #000; font-variant: small-caps; font-weight: bold; }
+        /* Navbar */
+        nav { border-bottom: 2px solid #000; padding: 25px 0; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-weight: bold; font-size: 1.4rem; text-decoration: none; color: #000; letter-spacing: 1px; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: #000; font-variant: small-caps; font-weight: bold; font-size: 0.9rem; }
         .nav-links a:hover { text-decoration: underline; }
 
-        /* Profile Section */
+        /* Hero Section */
         .hero { display: flex; margin-top: 50px; gap: 40px; align-items: flex-start; }
-        .profile-img { width: 220px; border: 1px solid #000; filter: grayscale(20%); }
+        .profile-box { text-align: center; }
+        .profile-img { width: 200px; border: 1px solid #000; box-shadow: 5px 5px 0px #eeeeee; }
+        .caption { font-size: 0.8rem; margin-top: 8px; font-style: italic; color: #555; }
         
         .content { flex: 1; }
-        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
-        .subtitle { font-style: italic; color: #444; margin-bottom: 20px; }
+        h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; }
+        .subtitle { font-style: italic; color: #444; margin-bottom: 15px; font-size: 1.1rem; }
 
-        /* The Devil Tagline Section */
+        /* The Masterpiece Tagline */
         .quote-box { 
-            margin: 30px 0; 
+            margin: 25px 0; 
             padding: 20px; 
-            border-left: 5px solid #000; 
+            border-left: 4px solid #000; 
             background: #f9f9f9; 
-            font-size: 1.25rem; 
+            font-size: 1.2rem; 
             font-style: italic;
             font-weight: 500;
+            line-height: 1.5;
         }
 
-        /* Technical Data Table */
-        table { width: 100%; border-collapse: collapse; margin: 30px 0; font-size: 0.95rem; }
-        th, td { border: 1px solid #000; padding: 12px; text-align: left; }
-        th { background: #eeeeee; }
-        .highlight { font-weight: bold; background: #fff9f9; }
+        /* Identity & Education Section */
+        .identity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
+        .lang-card { border: 1px solid #ddd; padding: 15px; background: #fff; }
+        h2 { font-size: 1.6rem; background: #000; color: #fff; padding: 5px 12px; display: inline-block; margin-top: 40px; }
+        h3 { border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 10px; }
 
-        footer { margin-top: 100px; padding: 20px 0; border-top: 1px solid #ccc; font-size: 0.85rem; color: #666; text-align: center; }
+        /* Data Table */
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; font-family: monospace; font-size: 0.9rem; }
+        th, td { border: 1px solid #000; padding: 12px; text-align: left; }
+        th { background: #f0f0f0; }
+        .highlight { font-weight: bold; color: #d00; }
+
+        footer { margin-top: 80px; padding: 30px 0; border-top: 1px solid #000; font-size: 0.8rem; text-align: center; }
 
         @media (max-width: 600px) {
             .hero { flex-direction: column; text-align: center; }
             .profile-img { margin: 0 auto; }
+            .identity-grid { grid-template-columns: 1fr; }
             nav { flex-direction: column; gap: 15px; }
         }
     </style>
@@ -53,32 +63,55 @@
     <nav>
         <a href="#" class="nav-logo">GIRIDHARI.LABS</a>
         <div class="nav-links">
+            <a href="#about">Identity</a>
             <a href="#research">Research</a>
-            <a href="#benchmarks">Benchmarks</a>
             <a href="https://github.com/giridhari-code">GitHub</a>
             <a href="https://x.com/giridhari_001">X.com</a>
         </div>
     </nav>
 
     <div class="hero">
-        <img src="c4e40r.jpg" alt="Giridhari" class="profile-img">
+        <div class="profile-box">
+            <img src="profile.jpg" alt="Giridhari" class="profile-img">
+            <div class="caption">Independent Researcher.</div>
+        </div>
         
         <div class="content">
-            <h1>Giridhari karmakar</h1>
-            <div class="subtitle">AI Researcher | Software Engineer | Ex-CEO at KaloOne</div>
+            <h1>Giridhari</h1>
+            <div class="subtitle">AI Researcher | Software Engineer | Ex-Founder of KaloOne</div>
             
             <div class="quote-box">
                 "I don't break the rules of logic; I rewrite them to serve me. Because I am the developer of my world."
             </div>
 
-            <p>Currently operating in stealth mode. Developing <b>Sovereign AI</b> architectures that prioritize mathematical elegance over brute-force hardware scaling.</p>
+            <p>I build <b>Sovereign AI</b>. I focus on high-efficiency neural frameworks that bypass the need for massive hardware clusters, enabling intelligence on the edge.</p>
+        </div>
+    </div>
+
+    <h2 id="about">Who Am I? | পরিচয় | परिचय</h2>
+    <p>Operating outside the traditional academic-industrial complex. My knowledge was forged through thousands of hours of local-first research in West Bengal, India.</p>
+    
+    <div class="identity-grid">
+        <div class="lang-card">
+            <h3>Linguistic Roots</h3>
+            <ul>
+                <li><b>বাংলা:</b> মাতৃভাষা ও চিন্তার ভিত্তি</li>
+                <li><b>हिंदी:</b> संवाद और सहयोग का माध्यम</li>
+                <li><b>English:</b> Technical Architecture</li>
+            </ul>
+        </div>
+        <div class="lang-card">
+            <h3>Education Level</h3>
+            <ul>
+                <li><b>Self-Directed Advanced Research:</b> Mastery over Certification.</li>
+                <li><b>Focus:</b> Low-level optimization and secure local models.</li>
+            </ul>
         </div>
     </div>
 
     <h2 id="research">Research: Ajeeb v1.8.2</h2>
-    <p>The Ajeeb framework is built upon the <i>Penance Architecture</i>, a proprietary logic set designed to eliminate 98% of redundant compute cycles in traditional neural processing.</p>
+    <p>A proprietary framework built on the <b>Penance Architecture</b>. Designed to eliminate redundant compute cycles in neural processing.</p>
 
-    <h2 id="benchmarks">Resource Optimization Benchmarks</h2>
     <table>
         <thead>
             <tr>
@@ -105,12 +138,11 @@
             </tr>
         </tbody>
     </table>
-
-    <p><i>Note: Benchmarks recorded on minimal hardware to ensure local-first sovereignty.</i></p>
+    <p><small>*Benchmarks recorded in a controlled 1-Core Intel Xeon environment.</small></p>
 
     <footer>
-        &copy; 2026 Giridhari's Private Research Lab. Hand-coded for efficiency. <br>
-        "Efficiency is my Mercy. Logic is my Law."
+        &copy; 2026 Giridhari's Private Research Lab. <br>
+        <i>"Efficiency is my Mercy. Logic is my Law."</i>
     </footer>
 
 </body>
